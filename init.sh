@@ -1,8 +1,14 @@
 #!/bin/bash
 
+export USER="khanton"
+export NAME="Anton Kholodkov"
+export EMAIL="khanton@yandex.ru"
+export ZSH_THEME="dpoggi"
 
-for file in $(ls chunks.d) do 
+BASH=$(which bash)
 
-  . ./chunks.d/${file}
+for file in $(ls chunks.d); do
+
+  ${BASH} ./chunks.d/${file}
 
 done

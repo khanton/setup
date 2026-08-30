@@ -6,10 +6,10 @@ echo "Install zsh..."
 sudo apt install zsh
 
 # set zsh as shell
-sudo chsh -s /bin/zsh khanton
+sudo chsh -s /bin/zsh ${USER}
 
 # install oh-my-zsh
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 
 # set theme
-sed -i s/robbyrussell/dpoggi/ ~/.zshrc
+sed -i "s/robbyrussell/${ZSH_THEME}/" ~/.zshrc

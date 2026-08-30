@@ -3,8 +3,8 @@ echo "Install git"
 sudo apt install git
 
 # set identify for git
-git config --global user.email "khanton@yandex.ru"
-git config --global user.name "Anton Kholodkov"
+git config --global user.email "${EMAIL}"
+git config --global user.name "${NAME}"
 
 
 # setup aliases for git
