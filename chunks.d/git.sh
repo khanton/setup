@@ -1,6 +1,6 @@
 echo "Install git"
 
-sudo apt install git
+sudo apt install git lazygit
 
 # set identify for git
 git config --global user.email "${EMAIL}"
