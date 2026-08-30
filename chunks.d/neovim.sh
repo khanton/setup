@@ -7,3 +7,9 @@ curl -sL https://github.com/neovim/neovim/releases/latest/download/nvim-linux-x8
 
 # install neovim config
 git clone git@github.com:khanton/nvim.git ~/.config/nvim/
+
+mkdir -p ~/.oh-my-zsh/custom
+
+cat >~/.oh-my-zsh/custom/nvim.zsh <<'EOF'
+export EDITOR=nvim
+EOF
