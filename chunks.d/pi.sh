@@ -11,3 +11,8 @@ PLUGINS='npm:pi-mcp-adapter npm:pi-alibaba-models npm:@pi-lab/webfetch npm:@juic
 for plugin in ${PLUGINS}; do
   pi install $plugin
 done
+
+cat >~/.tmux.conf <<'EOF'
+set -g extended-keys on
+set -g extended-keys-format csi-u
+EOF
